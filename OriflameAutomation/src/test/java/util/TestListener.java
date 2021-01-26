@@ -27,8 +27,9 @@ public class TestListener implements ITestListener {
 
     }
 
+    @Override
     public void onTestFailure(ITestResult iTestResult){
-        //saveScreenshot(); // with saveScreenshot maven tries to create another webdriver for chrome o_O
+        saveScreenshot();
     }
 
     @Override
